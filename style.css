@@ -504,3 +504,61 @@ transform:translateY(-3px);
 box-shadow:0 0 20px rgba(212,175,55,.5);
 
 }
+
+.footer{
+    padding:100px 25px;
+    background:#080808;
+    text-align:center;
+    border-top:1px solid rgba(212,175,55,.2);
+}
+
+.footer h2{
+    color:#d4af37;
+    font-size:42px;
+    margin-bottom:20px;
+    font-family:'Cormorant Garamond',serif;
+}
+
+.footer h3{
+    margin:40px 0;
+    color:#d4af37;
+}
+
+.footer p{
+    max-width:750px;
+    margin:auto;
+    line-height:1.9;
+    color:#ddd;
+}
+
+.footer-prayer{
+    margin:40px auto;
+    padding:25px;
+    max-width:800px;
+    border:1px solid rgba(212,175,55,.3);
+    border-radius:20px;
+    background:rgba(255,255,255,.04);
+}
+
+.footer-family{
+    margin-top:40px;
+}
+
+.footer-family strong{
+    color:#d4af37;
+}
+
+.footer-bottom{
+    margin-top:70px;
+    padding-top:30px;
+    border-top:1px solid rgba(212,175,55,.2);
+}
+
+.footer-bottom h2{
+    margin-bottom:10px;
+}
+
+.footer-bottom p{
+    color:#aaa;
+    letter-spacing:5px;
+}
