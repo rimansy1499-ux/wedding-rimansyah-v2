@@ -623,3 +623,33 @@ opacity:1;
 transform:translateY(0);
 
 }
+
+.music-btn{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    border:none;
+    background:#d4af37;
+    color:#111;
+    font-size:24px;
+    cursor:pointer;
+    box-shadow:0 0 20px rgba(212,175,55,.5);
+    z-index:9999;
+    transition:.3s;
+}
+
+.music-btn:hover{
+    transform:scale(1.1);
+}
+
+.music-btn.playing{
+    animation:spin 5s linear infinite;
+}
+
+@keyframes spin{
+    from{transform:rotate(0deg);}
+    to{transform:rotate(360deg);}
+    }
