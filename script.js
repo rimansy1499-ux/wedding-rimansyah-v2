@@ -50,3 +50,48 @@ section.classList.add("show");
 });
 
 });
+// ================= MUSIC =================
+
+const music = document.getElementById("bgMusic");
+const musicBtn = document.getElementById("musicBtn");
+
+if(musicBtn){
+
+let playing = false;
+
+musicBtn.addEventListener("click",()=>{
+
+    if(playing){
+        music.pause();
+        musicBtn.classList.remove("playing");
+        musicBtn.innerHTML="🔇";
+    }else{
+        music.play();
+        musicBtn.classList.add("playing");
+        musicBtn.innerHTML="🎵";
+    }
+
+    playing=!playing;
+
+});
+
+// otomatis play saat buka undangan
+const openBtn=document.querySelector(".btn");
+
+if(openBtn){
+
+openBtn.addEventListener("click",()=>{
+
+music.play();
+
+playing=true;
+
+musicBtn.classList.add("playing");
+
+musicBtn.innerHTML="🎵";
+
+});
+
+}
+
+}
